@@ -1,0 +1,18 @@
+{
+    "fekit_extension_command_name":"check",
+    "name": "fekit-extension-check",
+    "version": "0.0.1",
+    "description": "检查项目内容",
+    "dependencies": {
+        "jshint" : "*"
+    },
+    "main": "index.js",
+    "scripts": {},
+    "repository": "",
+    "author": "",
+    "license": "BSD",
+    "scripts":{
+        "postinstall":"node ./scripts/postinstall.js",
+        "preuninstall":"node ./scripts/preuninstall.js"
+    }
+}
