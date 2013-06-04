@@ -1,10 +1,10 @@
 {
     "fekit_extension_command_name":"check",
     "name": "fekit-extension-check",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "检查项目内容",
     "dependencies": {
-        "jshint" : "*"
+        "acorn": "*"
     },
     "main": "index.js",
     "scripts": {},
