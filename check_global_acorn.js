@@ -112,9 +112,8 @@ exports.globalsIdentifierCheck = function( path , cb ) {
 
     var code = fs.readFileSync( path ).toString();
 
-    var ast = acorn.parse( code );
-
     try {
+        var ast = acorn.parse( code );
         var r = parseGlobal( ast );
     } catch( err ) {
         cb( '[ERROR]' + err + '\n[ERROR]以上发生错误出现在：' + path  + '\n[ERROR]最好是按照标准javascript语法写代码，比如if必须补全大括号什么的。' )
